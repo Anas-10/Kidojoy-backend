@@ -1,10 +1,11 @@
 // postController.js
 const multer = require('multer');
-const path = require('path');
+const config = require("../config");
+
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, '/home/anas/Desktop/kido-backend/kido/src/posts');
+    cb(null, config.path );
   },
   filename: (req, file, cb) => {
     const fileName = `${Date.now()}-${file.originalname}`;

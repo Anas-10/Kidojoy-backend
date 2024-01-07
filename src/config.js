@@ -1,5 +1,7 @@
 var config = {}
 
+config.path = '/home/anas/Desktop/Kidojoy-backend/src/posts'
+
 config.database = {
     kidjoy : {
         host     :  'localhost',

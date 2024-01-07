@@ -6,6 +6,7 @@ const app = express();
 const path = require('path');
 
 
+
 app.use(cors());
 app.use(express.json({ limit: '10mb' })); // Adjust the limit as needed
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' })); // Adjust the limit as needed
